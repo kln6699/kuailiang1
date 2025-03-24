@@ -1,0 +1,29 @@
+﻿function validateMobile(mobile){if(mobile.length>0){var isMobile=/^\+\d+-\d+$/;if(isMobile.exec(mobile)){return true;}}
+return false;}
+function validateChineseMobile(mobile){if(mobile.length>0){var isMobile=/^\+86-1\d{10}$/;if(isMobile.exec(mobile)){return true;}}
+return false;}
+function validatePhone(mobile){if(mobile.length>0){var isMobile=/^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1})|(14[0-9]{1}))+\d{8})$/;var isPhone=/^(?:(?:0\d{2,3})-)?(?:\d{7,8})(-(?:\d{3,}))?$/;if(mobile.substring(0,1)==1){if(!isMobile.exec(mobile)&&mobile.length!=11){return false;}}
+else if(mobile.substring(0,1)==0){if(!isPhone.test(mobile)){return false;}}
+else{return false;}}
+return true;}
+function validateEmail(email){var myreg=/^([a-zA-Z0-9\-_\.]+)@[a-zA-Z0-9\-_\.]+\.[a-zA-Z]{2,}$/;if(email.length>0&&myreg.test(email)){return true;}
+return false;}
+function validateQQ(qq){var myreg=/^\d{5,11}$/;if(qq.length>0){if(!myreg.test(qq))
+{return false;}}
+return true;}
+function jumpToEmailLogin(email){var emailDomains={'gmail.com':'https://mail.google.com','hotmail.com':'https://www.hotmail.com','live.com':'https://login.live.com/','outlook.com':'https://www.outlook.com','yahoo.com':'https://mail.yahoo.com',"aim.com":"https://mail.aim.com/","gmx.com":"https://www.gmx.com/","inbox.com":"https://www.inbox.com/","fastmail.fm":"https://www.fastmail.fm/","mail.com":"https://www.mail.com/","protonmail.com":"https://mail.protonmail.com/","zoho.com":"https://mail.zoho.com","aol.com":"https://mail.aol.com"};var url='';if(email){var domain=email.split('@')[1];for(var key in emailDomains){if(domain==key){url=emailDomains[key];break;}}
+if(url==''){url='https://mail.'+domain;}}
+return url;}
+function changePasswordType(pwd,img,imgOpen,imgClose)
+{if(pwd.attr("type")=="password"&&img.attr('value')=="close"){pwd.prop("type","text");img.attr("src",imgOpen);img.attr("value","open");}else{pwd.prop("type","password");img.attr("src",imgClose);img.attr("value","close");}}
+function displayEyeImg(pwd,img,imgClose){var v=pwd.val();if(v.length>0){img.css('visibility','visible');img.attr('value','close');img.attr('src',imgClose);}else{img.css('visibility','hidden');}}
+function displayError(idInput,idDiv,msg,displayTime,type){if(type=='success'){$("#"+idInput).css('border','1px solid #56DADB');$("#"+idDiv+" p").css('color','#56DADB');$("#"+idDiv+" img").css('visibility','hidden');}else{$("#"+idInput).css('border','1px solid #EE696D');$("#"+idDiv+" img").css('display','inline-block');$("#"+idDiv+" p").css('color','#EE696D');}
+$("#"+idDiv+" p").text(msg);$("#"+idDiv).css('visibility','visible');if(displayTime>0){setTimeout(function(){$("#"+idInput).css('border','1px solid #F3F3FF');$("#"+idDiv+" p").text('');$("#"+idDiv).css('visibility','hidden');},displayTime);}}
+function hiddenError(idInput,idDiv){$("#"+idInput).css('border','1px solid #F3F3FF');$("#"+idDiv+" p").text('');$("#"+idDiv).css('visibility','hidden');}
+function displayMsg(idDiv,msg){$("#"+idDiv+" img").css('display','none');$("#"+idDiv+" p").css('color','#EE696D');$("#"+idDiv+" p").append("<a href='/help' target='_blank'>"+msg+"</a>");$("#"+idDiv+" p a").css('color','#5381F7');$("#"+idDiv).css('visibility','visible');}
+Date.prototype.Format=function(fmt){var o={"M+":this.getMonth()+1,"d+":this.getDate(),"h+":this.getHours(),"m+":this.getMinutes(),"s+":this.getSeconds(),"q+":Math.floor((this.getMonth()+3)/3),"S":this.getMilliseconds()};if(/(y+)/.test(fmt))
+fmt=fmt.replace(RegExp.$1,(this.getFullYear()+"").substr(4-RegExp.$1.length));for(var k in o)
+if(new RegExp("("+k+")").test(fmt))
+fmt=fmt.replace(RegExp.$1,(RegExp.$1.length===1)?(o[k]):(("00"+o[k]).substr((""+o[k]).length)));return fmt;};(function(){var fvwebapp=window.fvwebapp;var siteCommon={};fvwebapp.siteCommon=siteCommon;var parseQueryString=function(s){s=s[0]==='?'?s.substr(1):s;var params={};var items=s.split('&');for(var i=0;i<items.length;i++){if(items[i]!==''){var kv=items[i].split('=',2);params[decodeURIComponent(kv[0])]=(kv.length===1)?'':decodeURIComponent(kv[1].replace(/\+/g,' '));}}
+return params;};fvwebapp.request={host:window.location.host,hostname:window.location.hostname,path:decodeURI(window.location.pathname),params:parseQueryString(window.location.search),hash:(function(s){var p=s.lastIndexOf('#');return(p>=0)?s.substr(p+1):'';})(window.location.href)};var requestHashSplitPos=fvwebapp.request.hash.indexOf('?');fvwebapp.request.hashPath=requestHashSplitPos>0?fvwebapp.request.hash.substr(0,requestHashSplitPos):fvwebapp.request.hash;fvwebapp.request.hashParams=requestHashSplitPos>0?parseQueryString(fvwebapp.request.hash.substr(requestHashSplitPos+1)):{};siteCommon.popupConfirm=function(divName,title,content,btn){var popupDivId='popup-message-div-'+divName;var popupHtml='<div id="'+popupDivId+'" class="popup-layer">';popupHtml+='<div style="height: 100%; display: inline-block; vertical-align: middle;"></div>';popupHtml+='<div class="popup-block">';if(title){popupHtml+='<div class="popup-title">';popupHtml+='<span>'+title+'</span>';popupHtml+='</div>';}
+popupHtml+='<div class="popup-content">';popupHtml+=content;popupHtml+='</div>';popupHtml+='<div onclick="$(\'#'+popupDivId+'\').remove()" class="popup-btn">';popupHtml+='<span>'+btn+'</span>';popupHtml+='</div>';popupHtml+='</div>';popupHtml+='</div>';$(document.body).append(popupHtml);};siteCommon.formatMoneyShort=function(n,digits){if(digits===0){return(+n).toFixed(0);}else{return(+n).toFixed(digits||2).replace(/(\.0+|0+)$/,'');}};siteCommon.validateEmail=function(email){var checkEmail=/^([a-zA-Z0-9\-_.]+)@[a-zA-Z0-9\-_.]+\.[a-zA-Z]{2,}$/;return checkEmail.test(email);};siteCommon.stringFormat=function(str){if(arguments.length===0)return null;var args=Array.prototype.slice.call(arguments,1);return str.replace(/\{(\d+)\}/g,function(m,i){return args[i];});};})();
