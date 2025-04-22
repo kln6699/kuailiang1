@@ -1,0 +1,702 @@
+﻿
+body {
+  min-width: 1200px;
+}
+
+.center, .banner_wrapper .banner_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.common_a_style {
+  margin-bottom: 22px;
+  position: relative;
+  width: fit-content;
+}
+.common_a_style a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 306.92px;
+  height: 75.09px;
+  background: radial-gradient(22.78% 67.12% at -1.83% -4.11%, #f3f398 0%, rgba(255, 217, 79, 0) 100%), linear-gradient(295.39deg, #3bca9f 15.87%, #6ce477 83.68%);
+  border-radius: 10.8031px;
+}
+.common_a_style a .tb {
+  margin-right: 15px;
+  width: 30px;
+}
+.common_a_style a span {
+  font-family: "PingFang SC";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+.common_a_style a .dw {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 84px;
+  height: 78px;
+}
+
+/* 头部banner */
+.hidden-header-box {
+  display: none;
+  width: 100%;
+  background-color: #ffffff;
+  background: #feffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.header-content {
+  height: 60px;
+  line-height: 60px;
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.header-content .download_btn {
+  width: 175.526px;
+  height: 45.432px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+.header-content .download_btn img {
+  width: 26.716px;
+  height: 26.716px;
+  flex-shrink: 0;
+}
+.header-content .download_btn span {
+  color: #fff;
+  font-family: "PingFang SC";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 19.083px */
+  margin-left: 15px;
+}
+.header-content .header-right > span {
+  color: #666;
+  font-family: "Microsoft YaHei";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header-content .header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.header-content .header-left img {
+  width: 40px;
+  height: 40px;
+}
+.header-content .header-left h1 {
+  font-family: "Microsoft YaHei UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+  margin-left: 10px;
+}
+.header-content .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.header-content .header-right > span {
+  margin-right: 30px;
+  font-size: 18px;
+}
+.header-content .header-right a {
+  position: relative;
+  margin-right: 30px;
+  font-size: 16px;
+  font-family: "microsoft yahei";
+  color: #333333;
+}
+
+.banner_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 794px;
+  flex-shrink: 0;
+  background: url(../image/banner_bg.png) no-repeat center center/cover;
+  box-sizing: border-box;
+}
+.banner_wrapper .banner_box {
+  margin-top: 63px;
+}
+.banner_wrapper .banner_box .b_b_left .title {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 33px;
+}
+.banner_wrapper .banner_box .b_b_left .title h1 {
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  color: #3c3c3c;
+}
+.banner_wrapper .banner_box .b_b_left .title h1 span {
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  color: #00c094;
+}
+.banner_wrapper .banner_box .b_b_left .title .recommend {
+  position: absolute;
+  top: -36px;
+  right: -58px;
+  width: 125px;
+  height: 45px;
+  background: url(../image/recommend.png) no-repeat center center/cover;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_wrapper .banner_box .b_b_left .title .recommend span {
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #4d1f00;
+  padding-bottom: 8px;
+  display: inline-block;
+  line-height: 1;
+}
+.banner_wrapper .banner_box .b_b_left .description {
+  margin-bottom: 29px;
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: #00c094;
+}
+.banner_wrapper .banner_box .b_b_left .oneBriefIntroduction {
+  margin-bottom: 56px;
+}
+.banner_wrapper .banner_box .b_b_left .oneBriefIntroduction li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.banner_wrapper .banner_box .b_b_left .oneBriefIntroduction li + li {
+  margin-top: 10px;
+}
+.banner_wrapper .banner_box .b_b_left .oneBriefIntroduction li img {
+  margin-right: 8px;
+  width: 20px;
+}
+.banner_wrapper .banner_box .b_b_left .oneBriefIntroduction li span {
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  color: #595959;
+}
+.banner_wrapper .banner_box .b_b_left .banner_down_box {
+  margin-bottom: 22px;
+  position: relative;
+  width: fit-content;
+}
+.banner_wrapper .banner_box .b_b_left .banner_down_box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 306.92px;
+  height: 75.09px;
+  background: radial-gradient(22.78% 67.12% at -1.83% -4.11%, #f3f398 0%, rgba(255, 217, 79, 0) 100%), linear-gradient(295.39deg, #3bca9f 15.87%, #6ce477 83.68%);
+  border-radius: 10.8031px;
+}
+.banner_wrapper .banner_box .b_b_left .banner_down_box a .tb {
+  margin-right: 15px;
+  width: 30px;
+}
+.banner_wrapper .banner_box .b_b_left .banner_down_box a span {
+  font-family: "PingFang SC";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+.banner_wrapper .banner_box .b_b_left .banner_down_box a .dw {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 84px;
+  height: 78px;
+}
+.banner_wrapper .banner_box .b_b_left .twoBriefIntroduction {
+  margin-bottom: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+.banner_wrapper .banner_box .b_b_left .twoBriefIntroduction li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.banner_wrapper .banner_box .b_b_left .twoBriefIntroduction li + li {
+  margin-left: 19px;
+}
+.banner_wrapper .banner_box .b_b_left .twoBriefIntroduction li img {
+  margin-right: 5px;
+  width: 30px;
+}
+.banner_wrapper .banner_box .b_b_left .twoBriefIntroduction li span {
+  font-family: "Source Han Sans CN";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.736px;
+  line-height: 100%;
+  color: #595959;
+}
+.banner_wrapper .banner_box .b_b_left .banner_shipei {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.banner_wrapper .banner_box .b_b_left .banner_shipei span {
+  display: inline-block;
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #595959;
+}
+.banner_wrapper .banner_box .b_b_left .banner_shipei span + span {
+  margin-top: 2px;
+}
+.banner_wrapper .banner_box .b_b_right {
+  width: 550px;
+  margin-left: 85px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner_wrapper .banner_box .b_b_right > img {
+  width: 100%;
+}
+.banner_wrapper .banner_box .b_b_right .repair_text {
+  display: flex;
+  align-items: center;
+}
+.banner_wrapper .banner_box .b_b_right .repair_text img {
+  margin-right: 7px;
+  width: 24px;
+}
+.banner_wrapper .banner_box .b_b_right .repair_text span {
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #595959;
+}
+.banner_wrapper .banner_box .b_b_right .repair_text span span {
+  display: inline-block;
+  margin: 0 3px;
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #ff700d;
+}
+
+.step01_box {
+  width: 100%;
+  padding-top: 44px;
+  padding-bottom: 185px;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step01_box .content {
+  width: 1200px;
+  height: 554px;
+  background: url(../image/step01.png) no-repeat center center/cover;
+  padding-top: 70px;
+  padding-left: 78px;
+  box-sizing: border-box;
+}
+.step01_box .content .title {
+  margin-left: 137px;
+  margin-bottom: 82px;
+  font-family: "DingTalk JinBuTi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  color: #3c3c3c;
+}
+.step01_box .content ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 1052px;
+}
+.step01_box .content ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 483px;
+}
+.step01_box .content ul li:nth-child(n+3) {
+  margin-top: 38px;
+}
+.step01_box .content ul li img {
+  margin-right: 19px;
+  width: 36px;
+}
+.step01_box .content ul li span {
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #595959;
+}
+
+.step02_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 69px;
+  background-color: #fff;
+}
+.step02_box > .title {
+  margin-bottom: 80px;
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: #3c3c3c;
+}
+.step02_box .item_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 78px;
+  box-sizing: border-box;
+  width: 1200px;
+  height: 508px;
+  background: rgba(62, 117, 105, 0.02);
+  border-radius: 25px;
+}
+.step02_box .item_box + .item_box {
+  margin-top: 98px;
+}
+.step02_box .item_box .title {
+  margin-bottom: 64px;
+}
+.step02_box .item_box .title > img {
+  width: 174px;
+}
+.step02_box .item_box .title p {
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  color: #3c3c3c;
+  margin-bottom: 35px;
+}
+.step02_box .item_box .title > span {
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #595959;
+  display: inline-block;
+  margin-bottom: 48px;
+}
+.step02_box .item_box .title a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 220px;
+  height: 64.71px;
+  background: radial-gradient(22.78% 67.12% at -1.83% -4.11%, #f3f398 0%, rgba(255, 217, 79, 0) 100%), linear-gradient(295.39deg, #3bca9f 15.87%, #6ce477 83.68%);
+  border-radius: 62.1176px;
+}
+.step02_box .item_box .title a img {
+  margin-right: 12px;
+  width: 25px;
+}
+.step02_box .item_box .title a span {
+  font-family: "PingFang SC";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/* 评价 */
+.assess-box {
+  width: 100%;
+  padding-top: 10px;
+  box-sizing: border-box;
+  background: url(../image/footer_bg.png) no-repeat center center/cover;
+}
+.assess-box .title {
+  margin-bottom: 90px;
+  color: #3c3c3c;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.assess-content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.assess-content ul:nth-child(1) li {
+  display: none;
+  width: 100%;
+  height: 307px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 30px;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding-top: 48px;
+  filter: drop-shadow(0px 0px 14px rgba(186, 186, 186, 0.25));
+}
+
+.assess-star h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 24px;
+}
+
+.assess-content ul:nth-child(1) li span {
+  display: block;
+  width: 1000px;
+  height: 1px;
+  background: #ebeff3;
+  border-radius: 0px 0px 0px 0px;
+  margin: 40px auto 0 auto;
+}
+
+.assess-content ul:nth-child(1) li p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666473;
+  margin-top: 44px;
+}
+
+.assess-content ul:nth-child(1) li i {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  position: absolute;
+  bottom: -20px;
+  border: 2px solid #fff;
+  border-radius: 7px;
+}
+
+.left1 {
+  left: 80px;
+}
+
+.left2 {
+  left: 280px;
+}
+
+.left3 {
+  left: 479px;
+}
+
+.left4 {
+  left: 678px;
+}
+
+.left5 {
+  left: 877px;
+}
+
+.left6 {
+  left: 1081px;
+}
+
+.assess-content ul:nth-child(1) li:first-child {
+  display: block;
+}
+
+.assess-content ul:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 63px;
+}
+
+.assess-content ul:nth-child(2) li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.assess-content ul:nth-child(2) li:hover {
+  cursor: pointer;
+}
+
+.assess-content ul:nth-child(2) li img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+}
+
+.assess-content ul:nth-child(2) li.active img {
+  border: 3px solid rgb(29, 207, 156);
+}
+
+.assess-content ul:nth-child(2) li p {
+  font-family: "Microsoft YaHei UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: lowercase;
+  color: #666473;
+  margin-top: 17px;
+  margin-bottom: 11px;
+}
+
+.assess-content ul:nth-child(2) li h2 {
+  font-family: "Microsoft YaHei UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #283256;
+}
+
+.footer_box {
+  margin-top: 66px;
+  padding-bottom: 79px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer_box .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_box .content .item_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer_box .content .item_box > span {
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: 0.15em;
+  color: #464646;
+}
+.footer_box .content .item_box > span span {
+  font-family: "Microsoft YaHei";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 47px;
+  color: #00c094;
+}
+.footer_box .content .item_box p {
+  font-family: "Microsoft YaHei UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  color: rgba(40, 67, 83, 0.7);
+}
+.footer_box .content .link {
+  width: 1px;
+  height: 53px;
+  margin: 0 53px;
+  background-color: #8cc6fd;
+}
+.footer_box .common_a_style {
+  margin-top: 43px;
+}
+
+.aggregate_style {
+  line-height: 1;
+}
+.aggregate_style .header-title {
+  line-height: 1;
+}
+.aggregate_style .header-title h1 {
+  line-height: 1;
+  font-weight: 700;
+}
+.aggregate_style .header-title span {
+  display: inline-block;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
